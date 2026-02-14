@@ -193,6 +193,7 @@
   `;
 
       if (scorePercentage >= PASS_PERCENTAGE) {
+        localStorage.setItem("level1_completed", "true");
         localStorage.setItem(`progress_${topic}`, "completed");
 
         // Unlock the next topic (and keep the unlock state monotonic).
